@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            #heading1 span {
+                color: red;
+            }
+
+            .heading-green {
+                color: green
+            }
+        </style>
+
+        <script>
+            function headingClicked(){
+                alert("geklikt");
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--onmouseover="headingClicked()"--> 
+        <h1 id="heading1" class="main-heading">
+            The <span>DOM</span>(inator) 
+        </h1>
+
+        <h2 id="heading2" class="heading2"> 
+            Shots fired for bad music
+        </h2>
+
+        <h2 class="heading2"> 
+            Play good music please it is almost weekend
+        </h2>
+
+        <div id="placeholder">
+            <p> Item 1 </p>
+            <p> Item 2 </p>
+            <!-- Achter item2 moet heading2 -->
+            <p> Item 3 </p>
+            <p> Item 4 </p>
+        </div>
+
+        <ul id="colorpicker">
+            <li>
+                green
+            </li>
+            <li>
+                blue
+            </li>
+            <li>
+                orange
+            </li>
+            <li>
+                pink
+            </li>
+        </ul>
+
+        <script src="./index.js">
+        </script>
+        <script src="./function.js">
+        </script>
+    </body>
+</html>

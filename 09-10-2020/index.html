@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Settings for the browser-->
+        <title>Testtitel jenge</title>
+        <meta name="author" content="Thomas More">
+        <meta name="Creator" content="Laurence Leysen">
+        <meta name="keyywords" content="Contact, account, thomas more">
+
+    </head>
+
+    <body> <!-- wat de bezoekers gaan zien -->
+        <form action="./index.html" method="GET">
+            <!-- video -->
+            <video>
+                <source src="./video.mp4" type="video/mp4"/>
+                <source src="./video.ogg" type="video/ogg"/>
+                fckded
+            </video>
+            <audio>
+                <source src="./audio.mp3" type="video/mp3">
+                <source src="./audio.wav" type="video/wav">
+            </audio>
+            <!-- Name block -->
+            <label for="name">
+                What's your name
+            </label>
+            <input 
+                id="name" 
+                type="text" 
+                value="GIVE_NAME" 
+                name="name" 
+                placeholder="Fill in your Name" 
+                required
+            />
+            
+            <br/>
+            <br/>
+
+            <!-- mail -->
+            <label for="email">
+                E-Mail
+            </label>
+            <input type="email" id="email" name="email"/>
+            <br/>
+            <br/>
+
+            <!-- Message block -->
+            <label for="message">
+                Message to me
+            </label>
+            <input id="message" type="text" value="" name="message" placeholder="Fill in your message"/>
+
+            <br/>
+            <br/>
+
+            <!-- Password block -->
+            <label for="password">
+                Password
+            </label>
+            <input id="password" type="password" value="" name="password" />
+
+            <br/>
+            <br/>
+
+            <label for="age">
+                What is your age?
+            </label>
+            <input type="number" id="age" name ="mental_age"/>
+
+            <br/>
+            <br/>
+
+            <!-- Bestand doorsturen -->
+            <label for="cv">
+                Cv
+            </label>
+            <input type="file" id="cv" name="cv_file" />
+
+            <br/>
+            <br/>
+
+            <!-- mail -->
+            <label for="email">
+                E-Mail
+            </label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+            />
+
+            <br/>
+            <br/>
+
+            <!-- gsm -->
+            <label for="gsm">
+                GSM
+            </label>
+            <input 
+                type="tel" 
+                id="gsm" 
+                name="gsm"
+            />
+
+            <br/>
+            <br/>
+
+            <label for="dob">
+                Date of birth
+            </label>
+            <input type="date" name="date_of_birth" id="dob"/>
+
+            <br/>
+            <br/>
+
+            <!-- Gender -->
+            <input type="radio" name="gender" value="male" id="gender_male"/>
+            <label for="male">
+                male
+            </label>
+            <br/>
+            <br/>
+            <input type="radio" name="gender" value="female" id="gender_female"/>
+            <label for="female">
+                female
+            </label>
+            <br/>
+            <br/>
+            <input type="radio" name="gender" value="x" id="gender_x"/>
+            <label for="x">
+                x
+            </label>
+
+            <br/>
+            <br/>
+
+            <input type="checkbox" id="skills programming" name="skills_programming"/>
+            <label for="skills_programming">
+                hardcore programming
+            </label>
+            <input type="checkbox" id="skills_google" name="skills_google"/>
+            <label for="skills_google">
+                keyboard warrior on google
+            </label>
+            
+            <input type="checkbox" id="skills_designers" name="skills_designers"/>
+            <label for="skills_designers">
+                I can make the Mona Lisa on pc
+            </label>
+            <br/>
+            <br/>
+
+            <input type="color" id="color"/>
+            <label for="color">
+                Kies een u lievelingskleur
+            </label>
+
+            <br/>
+            <br/>
+            
+            <!-- grade -->
+            <label for="grade">
+                grade
+            </label>
+            <input type="range" id="range" name="grade" min="0" max="10" value="5" />
+            <br/>
+            <br/>
+
+            <!-- comment section -->
+            <label for="comment">
+                Comment
+            </label>
+            <br/>
+            <textarea name="comment" id="comment" rows="10" cols="30" >text --> value</textarea>
+
+            <br/>
+            <br/>
+
+            <!-- gender partner -->
+            <label for="gender_partner">
+                Gender of your partner
+            </label>
+            <select name="gender_of_partner" id="gender_partner">
+                <option value="m">
+                    male
+                </option>
+
+                <option value="f">
+                    female
+                </option>
+
+                <option value="x">
+                    x
+                </option>
+            </select>
+
+            <br/>
+            <br/>
+
+            <!-- Hidden field -->
+            <input type="hidden" name="interested_in"  value="cars"/>
+
+                
+            <!-- Sends the form to the action, is required -->
+            <input type="submit" value="Send message"/>
+            <input type="submit" value="SendMessage"/>
+
+        </form>
+    </body>
+</html>

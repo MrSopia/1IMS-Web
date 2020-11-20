@@ -1,0 +1,99 @@
+html, body {width: 100% !important;}
+
+body { font-family: verdana, sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    font-style: normal;
+    color: #000;
+    background-color: #FFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#pagina {
+    width: 850px;
+    background-color: #FFF;
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+div#header {
+    background-color: transparent;
+    color: #000;
+    height: 5em;
+    padding: 1em;
+}
+
+div#header, div#footer h1 {
+    line-height: 1em;
+}
+
+div#header {
+    border-bottom: 1px solid #000;
+}
+
+div#footer {
+    background-color: transparent;
+    color: #000;
+    padding: 1em;
+    border-top: 1px solid #000;
+}
+
+div#content {
+    background-color: #FFF;
+    border-left: 1px solid #000; 
+    color: #000;
+    font-size: 80%;
+    text-decoration: none;
+    margin-left: 17em;
+    padding: 1em;
+    overflow: hidden;
+}
+
+div#menu {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+    width: 12em;
+    float: left;
+    padding: 1em;
+}
+
+#menu h1 { 
+    color: #444; 
+    background: transparent; 
+    font-size: 1.1em; 
+    font-weight: bold; 
+    line-height: 1.3em; 
+}
+
+#menu a:visited, #footer a:visited, body a:visited { 
+    color: #777; 
+    background: transparent;
+} 
+
+#menu a:hover, #footer a:hover, body a:hover { 
+    color: #FFF; 
+    background: rgb(132,157,180);
+}
+
+#menu a, #footer a, body a { 
+    display: block; 
+    color: #000; 
+    font-weight: bold;
+    font-size: 90%; 
+    text-decoration: none;
+}
+
+#footer a { 
+    display: inline;
+}
+#footer {
+    text-align: center;
+}
+
+div#image{
+    float:left;
+    clear: left; 
+    margin: 4px;
+}

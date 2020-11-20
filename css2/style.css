@@ -1,0 +1,74 @@
+.c-characters {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.c-character {
+    position: relative;
+    width: 400px;
+}
+
+.c-character img {
+    width: 100%;
+}
+
+.c-character img {
+    width: 100%;
+}
+
+img.c-head {
+    width: 80px;
+}
+#head1 {
+    position: absolute;
+    top: 182px;
+    left: 160px;
+    z-index: 0;
+}
+
+#head2 {
+    position: absolute;
+    top: 182px;
+    left: 160px;
+    z-index: 1;
+}
+
+#head3 {
+    position: absolute;
+    top: 182px;
+    left: 160px;
+    z-index: 0;
+}
+
+#head4 {
+    position: absolute;
+    top: 182px;
+    left: 160px;
+    z-index: 1;
+}
+
+
+#rightside:hover img:last-child{
+    display: none;
+}
+
+#rightside:hover img:first-child {
+    display: block;
+}
+
+#leftside:hover img:last-child{
+    display: none;
+}
+
+#leftside:hover img:first-child {
+    display: block;
+  }
+
+
+
+
+
+
+

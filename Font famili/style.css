@@ -1,0 +1,14 @@
+@font-face{
+    font-family: "Amatic";
+
+    src: url("./webfont/AmaticSC-Regular.ttf") format("truetype");
+}
+h1 {
+    font-family: "Arial", sans-serif;
+}
+h2 {
+    font-family: "Raleway", sans-serif;
+}
+h3{
+    font-family: "Amatic", sans-serif;
+}
