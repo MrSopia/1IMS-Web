@@ -1,0 +1,139 @@
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.content{
+    width: 100%;
+    margin: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  padding: 8px;
+  float: left;
+  width: 295px;
+  height: 88px;
+}
+
+#navigation-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.navigation-bar {
+  height: 70px;
+  width: 100%;
+}
+
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: black;
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 110px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+.navigation-bar li a:hover {
+    color: #f2f2f2;
+    background-color: grey;
+    border-radius: 10px;
+  }
+
+.swipe-frame{
+    background-color: white;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 384px;
+    height: 600px;
+    border-radius: 4%;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#sorp{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+.photo-frame{
+    background-color: grey;
+    margin-top: 0px;
+    margin-left: 2px;
+    width: 380px;
+    height: 480px;
+    border-radius: 4%;
+}
+
+.buttons{
+    width: 380px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 2px;
+}
+
+.buttonlike {
+    background-color: lightgreen;
+    border: none;
+    color: white;
+    padding: 40px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 150px;
+    border-radius: 50px;
+}
+
+.buttonreject {
+    background-color: #fc033d;
+    border: none;
+    color: white;
+    padding: 40px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.footer{
+    margin-top: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
