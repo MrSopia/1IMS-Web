@@ -5,5 +5,6 @@
         </head>
         <body>
             <h1>MAMP TEST</h1>
+            <?php echo "php test";?>
         </body>
     </html>
