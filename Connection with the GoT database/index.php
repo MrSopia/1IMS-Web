@@ -4,13 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Connection GOT database</title>
-        <?php 
-        $dbHost = "ID328468_150551.db.webhosting.be";
-        $dbUsername = "ID328468_phpeditor";
-        $dbPassword = "WebIsMyLife2020";
-        $dbName = "ID328468_150551";
-        $conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
-        ?>
 
         <style>
             table, th, td {
@@ -29,16 +22,7 @@
         </style>
         
     </head>
-    <body>
-        <?php
-        if ($conn == false){
-            die("RIP CONNECTION");
-        }
-        // var_dump($conn);
-        $sql = "SELECT * FROM characters";
-        $result = mysqli_query($conn, $sql);
-        $persons = $result->fetch_all(MYSQLI_ASSOC);
-        ?>
+    <body>   
         <h1>Table read from database</h1>
         <table>
                 <tr>
@@ -46,6 +30,10 @@
                   <th>Age</th>
                 </tr>
                 <?php 
+                    include "./includes/db.php";
+                    $query = "SELECT * FROM characters";
+                    $persons = getQuery($query);
+
                     foreach ($persons as $data){
                         echo "<tr>";
                         echo "<td>" . $data["name"] . "</td>";
