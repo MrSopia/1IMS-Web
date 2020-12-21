@@ -7,15 +7,16 @@
 
         <style>
             table, th, td {
-              border: 1px solid black;
-              border-collapse: collapse;
-              width: 400px;
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 100%;
             }
             th, td {
-              padding: 5px;
+                width: 50%;
+                padding: 5px;
             }
             th {
-              text-align: left;
+                text-align: left;
             }
 
         </style>
