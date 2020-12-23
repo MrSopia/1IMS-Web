@@ -11,7 +11,9 @@
                 include "./includes/nav.php";
             ?>
             <div class="vertdivider"></div>
-
+            <div class="main">
+                <h1>services</h1>
+            </div>
             <div class="vertdivider"></div>
             <?php
                 include "./includes/footer.php";
