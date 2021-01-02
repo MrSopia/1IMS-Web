@@ -19,7 +19,11 @@
                 <div class="swipe-frame">
                     <!--Stuff-->
                     <div class="photo-frame">
-                        
+                        <div class="information">
+                            <!-- TEXT VOOR DATABASE SWIPE USER -->
+                            <span>18, Geel</span><br>
+                            <span>Laurence Leysen</span>
+                        </div>  
                     </div>
                     <div class="buttons">
                         <a href="#" class="buttonreject"></a>

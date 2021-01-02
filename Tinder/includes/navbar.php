@@ -4,8 +4,8 @@
             
         <ul>
             <li><a href="./index.php">Home</a></li>
-            <li><a href="./swipe.php">Swipe</a></li>
             <li><a href="./create.php">Create Profile</a></li>
+            <li><a href="./swipe.php">Swipe</a></li>
         </ul>
     </div>
 </div>

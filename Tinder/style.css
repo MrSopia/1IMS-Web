@@ -9,6 +9,7 @@
 }
 
 body {
+  font-family: Arial;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
@@ -100,12 +101,12 @@ body {
     background-color: grey;
     border: none;
     color: white;
-    width: 240px;
+    width: 250px;
     padding: 40px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 38px;
+    font-size: 36px;
     margin-left: 150px;
     border-radius: 20px;
     transition: 0.5s;
@@ -190,7 +191,9 @@ body {
 
 .createacctbl{
   margin: 0 auto;
-  font-size: 29px;
+  font-size: 14px;
+  color:	#484848;
+  font-weight: bold;
 }
 
 input[type=text], select {
@@ -201,5 +204,25 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 14px;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 13px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.information{
+  position: absolute; 
+  font-size: 32px;
+  font-weight: bold;
+  bottom: 275px; 
+  margin-left: 15px;
+  text-align: left;
 }

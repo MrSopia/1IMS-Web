@@ -19,7 +19,7 @@
                 <div class="swipe-frame">
                     <!--Stuff-->
                     <div class="photo-frame">
-                    <form action="insert.php" method="POST">
+                        <form action="insert.php" method="POST">
                         <table class="createacctbl">
                            <tr>
                                <td><input type="text" name="fname" placeholder="Firstname" required></td>
@@ -31,24 +31,46 @@
                                <td><input type="text" name="city" placeholder="City" required></td>
                            </tr>
                            <tr>
-                               <td><input type="text" name="BoT" placeholder="Birth of date" required></td>
+                               <td>Date of birth</td>
                            </tr>
                            <tr>
-                               <td><input type="text" name="usergender" placeholder="Gender" required></td>
+                               <td><input type="date" name="BoT" placeholder="Birth of date" required></td>
                            </tr>
                            <tr>
-                               <td><input type="text" name="userprefgender" placeholder="Preferred gender" required></td>
+                               <td>Gender</td>
                            </tr>
-                           <!--  <td rowspan=1></td> -->
+                           <tr>
+                               <td>
+                                   <select name="gender" required>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </td>
+                           </tr>
+                           <tr>
+                               <td>Preferred gender</td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   <select name="preferredgender" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+
                         </table>
-                    
+                        
                     </div>
                     <div class="buttons">
                         <input class="create_button" type="submit" value="Create an account">
                     </div>
                     </form>
+                        
 
-                </div>
+                    </div>
                 </div>
             </div>
 
