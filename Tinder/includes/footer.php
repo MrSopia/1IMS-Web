@@ -1,0 +1,1 @@
+<div class="footer">Proudly made by China monkey team Laurence from IMS</div>
