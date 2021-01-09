@@ -34,6 +34,7 @@
             $numbers = getQuery($query);
 
             $conn = ConnectDB();
+            var_dump($conn);
             $query = "SELECT StoredNumbers 
             FROM higherlower
             WHERE idNumber = (SELECT MAX(idNumber) FROM higherlower)";

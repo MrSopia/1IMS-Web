@@ -8,36 +8,27 @@
     <body>
         <div class="container">
             <?php 
-            include "./includes/navbar.php"
+            include "./includes/navbar.php";
             ?>
             
             <div class="content">
                 <div id="sorp">
-                    Create an account
+                    Hello who are you?
                 </div>
 
                 <div class="swipe-frame">
                     <!--Stuff-->
                     <div class="photo-frame">
-                        <form action="insert.php" method="POST">
+                        <form action="./includes/userstats.php" method="POST">
                         <table class="createacctbl">
-                           <tr>
-                               <td><input type="text" name="fname" placeholder="Firstname" required></td>
+                            <tr>
+                               <td>Name</td>
                            </tr>
                            <tr>
-                               <td><input type="text" name="lname" placeholder="Lastname" required></td>
+                               <td><input type="text" name="nameswiper" placeholder="Name" required></td>
                            </tr>
                            <tr>
-                               <td><input type="text" name="city" placeholder="City" required></td>
-                           </tr>
-                           <tr>
-                               <td>Date of birth</td>
-                           </tr>
-                           <tr>
-                               <td><input type="date" name="BoD" placeholder="Birth of date" required></td>
-                           </tr>
-                           <tr>
-                               <td>Gender</td>
+                               <td>Your gender</td>
                            </tr>
                            <tr>
                                <td>
@@ -56,16 +47,15 @@
                                    <select type="text" name="preferredgender" required>
                                         <option value="M">Male</option>
                                         <option value="F">Female</option>
-                                        <option value="O">Other</option>
+                                        <option value="X">Other</option>
                                     </select>
                                 </td>
-                            </tr>
-
+                           </tr>
                         </table>
                         
                     </div>
                     <div class="buttons">
-                        <input class="create_button" type="submit" value="Create an account">
+                        <input class="create_button" type="submit" value="Find your match">
                     </div>
                     </form>
                         

@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>NotTinder</title>
-        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
     </head>
     <body>
         <div class="container">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="choosebut">
                     <a href="./create.php" class="choosebuttons">Create a profile</a>
-                    <a href="./swipe.php" class="choosebuttons">Swipe swipe</a>
+                    <a href="./swipetemp.php" class="choosebuttons">Swipe swipe</a>
                 </div>  
             </div>
 
