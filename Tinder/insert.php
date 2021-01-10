@@ -11,7 +11,7 @@ $var6 = $_POST[preferredgender];
 include "./includes/db.php";
 
 $conn = ConnectDB();
-var_dump($conn);
+
 sendQuery($_POST[fname],$_POST[lname],$_POST[city],$_POST[BoD],$_POST[gender],$_POST[preferredgender]);
 $conn->close();
 

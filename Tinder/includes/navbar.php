@@ -1,3 +1,4 @@
+
 <div class="navigation-bar">
     <div id="navigation-container">
         <a href="./index.php"><img class="logo" src="./images/NoTtinderlogo.png"></a>

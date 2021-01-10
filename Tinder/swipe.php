@@ -1,4 +1,6 @@
-<!-- Knock off Tinder by China Laurence-->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,6 +11,7 @@
         <div class="container">
             <?php 
             include "./includes/navbar.php"
+            
             ?>
             
             <div class="content">
@@ -22,35 +25,28 @@
                             <!-- TEXT VOOR DATABASE SWIPE USER 
                             <span>18, Geel</span><br>
                             <span>Laurence Leysen</span>-->
-
-                            <span>
                             <?php
-                                session_start();
+                                include "./includes/db.php";
+
+                                $swipeid = $_SESSION['swipeid'];
+                                $maxid = $_SESSION['maxid'];
                                 $user = $_SESSION['user'];
                                 $gender = $_SESSION['gender'];
                                 $prefgender = $_SESSION['prefgender'];
-                                $swipeid = $_SESSION['swipeid'];
-                                $maxid = $_SESSION['maxid'];
 
-                                include "./includes/db.php";
-                                $conn = ConnectDB();
-                                
                                 $query = "SELECT Firstname FROM test WHERE PrefGender = '$gender' AND userId > $swipeid AND Gender = '$prefgender' LIMIT 1";
-                                $data = getQuery($query);
 
+                                $data = getQuery($query);
+                                
                                 foreach ($data as $name){
                                   $fn = $name["Firstname"];
                                 }
-                                
-                                $_SESSION['swipeduser'] = $fn;
+
                                 echo "$fn";
+                                $_SESSION['swipeduser'] = $fn;
+                                
                                 $testy1 = $_SESSION['maxmatch'];
                                 $testy2 = $_SESSION['maxid'];
-
-                                if (empty($fn)) {
-                                    header("Location: result.php");
-                                }
-                                
 
                                 $query = "SELECT userId FROM test WHERE Firstname = '$fn'";
                                 $data = getQuery($query);
@@ -59,9 +55,10 @@
                                   $newid = $id["userId"];
                                 }
                                 $_SESSION['swipeid'] = $newid;
-
+                                
                             ?>
-                            </span>
+
+                        
 
                         </div>  
                     </div>

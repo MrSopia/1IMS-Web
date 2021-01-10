@@ -1,11 +1,12 @@
 <?php 
+    
     function ConnectDB(){
-        $dbHost = "localhost";
-        $dbUsername = "root";
-        $dbPassword = "root";
-        $dbName = "realtinder";
-        $port = 8889;
-        $conn = mysqli_connect("$dbHost:$port", $dbUsername, $dbPassword, $dbName);
+        $dbHost = "ID329040_tinder.db.webhosting.be";
+        $dbUsername = "ID329040_tinder";
+        $dbPassword = "Alex2079";
+        $dbName = "ID329040_tinder";
+        //$port = 8889;
+        $conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
 
         if ($conn == false){
             die("RIP CONNECTION");
@@ -18,7 +19,7 @@
         $sql = "INSERT INTO test (Firstname, Lastname, City, DoB, Gender, PrefGender) VALUES ('$var1','$var2','$var3','$var4','$var5','$var6')";
 
         if (mysqli_query($conn, $sql)) {
-            echo "New record created successfully";
+
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
@@ -30,7 +31,7 @@
         $sql = "INSERT INTO result (UserId, MatchId, RelationStatus) VALUES ('$var1','$var2',$var3)";
 
         if (mysqli_query($conn, $sql)) {
-            echo "New record created successfully";
+            
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
@@ -46,5 +47,3 @@
         //return results in associated array
         return $result->fetch_all(MYSQLI_ASSOC);
     }
-
-?>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!-- Knock off Tinder by China Laurence-->
 <!DOCTYPE html>
 <html>
@@ -25,7 +28,7 @@
                     <?php
                     include "./includes/db.php";
                     $conn = ConnectDB();
-                    session_start();
+                    
                     $user = $_SESSION['user'];
 
                     $query = "SELECT MatchId FROM result WHERE RelationStatus = 1 AND UserId = '$user'";
